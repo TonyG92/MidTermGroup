@@ -10,14 +10,10 @@ namespace MidTermLibrary
     {
         static void Main(string[] args)
         {
+            List<Book> books = SavedBooks.FindBooks();
             string userInput;
             string response = "y";
             Console.WriteLine("Welcome to four codemen library!");
-            List<Book> books = SavedBooks.FindBooks();
-            foreach (Book book in books)
-            {
-                Console.WriteLine(book.Author + book.Title);
-            }
 
             while (response == "y")
             {
@@ -28,11 +24,11 @@ namespace MidTermLibrary
                 Console.Write("What category are you interested in? ");
 
                 userInput = Console.ReadLine();
-                foreach (Book book in books)
+                foreach (Book m in books)
                 {
-                    if (userInput.ToLower() == book.Title)
+                    if (userInput.ToLower() == m.Title)
                     {
-                        Console.WriteLine(book.Title);
+                        Console.WriteLine(m.Title);
                     }
 
                 }
@@ -42,6 +38,10 @@ namespace MidTermLibrary
                 response = Console.ReadLine();
 
 
+                foreach (Book book in books)
+                {
+                    Console.WriteLine(book.Author + book.Title);
+                }
             }
         }
     }
