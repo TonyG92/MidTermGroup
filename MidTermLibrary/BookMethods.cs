@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace MidTermLibrary
 {
+    
     class BookMethods 
     {
         //Data Members
@@ -32,7 +33,7 @@ namespace MidTermLibrary
             titlekeyword = _titlekeyword;
         }        
 
-        //methods
+        
         public void BookDue(Book book)
          {
             book.CheckedIn = false;
