@@ -38,12 +38,7 @@ namespace MidTermLibrary
             book.CheckedIn = false;
             book.DueDate = DateTime.Now.AddDays(14);
          }
-<<<<<<< HEAD
-=======
-
->>>>>>> 637cbe86d2209ae7e7739ca379011997a67982c9
-
-        
+ 
         public void BookAdd(List<Book> books, string inputTitle, string inputAuthor, string inputGenre)
         {
             Book book = new Book(inputTitle, inputAuthor, inputGenre);
@@ -54,10 +49,7 @@ namespace MidTermLibrary
 
   
         // a method bookvalidation -andre
-<<<<<<< HEAD
-
-=======
->>>>>>> 637cbe86d2209ae7e7739ca379011997a67982c9
+         
         public static bool BookValidation(List<Book> books, string input)
         {
             foreach (Book book in books)
@@ -69,10 +61,6 @@ namespace MidTermLibrary
             }
             return false;
         }
-<<<<<<< HEAD
-
-=======
->>>>>>> 637cbe86d2209ae7e7739ca379011997a67982c9
 
     }
 }
