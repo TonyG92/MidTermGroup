@@ -18,7 +18,7 @@ namespace MidTermLibrary
 
             while (response == "y")
             {
-                Console.WriteLine("Please select either Author, Title or Genre or type 6 to get a list of all our books.");
+                Console.WriteLine("Please select either Author, Title , Genre or type All to get a list of all our books.");
                 choice = Console.ReadLine();
                 switch (choice)
                 {
