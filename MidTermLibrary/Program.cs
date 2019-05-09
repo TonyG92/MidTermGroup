@@ -30,17 +30,18 @@ namespace MidTermLibrary
                 Console.Write("What category are you interested in? ");
 
                 userInput = Console.ReadLine();
-                foreach (Book b in books)
+                foreach (Book book in books)
                 {
-                    if (userInput.ToLower() == books.Title)
+                    if (userInput.ToLower() == book.Title)
                     {
-                        Console.WriteLine(books.Title);
+                        Console.WriteLine(book.Title);
                     }
 
                 }
 
                 Console.WriteLine("Would you like to continue? (y/n) ");
 
-            }  
+            }
         }
     }
+}
