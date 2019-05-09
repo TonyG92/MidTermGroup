@@ -38,7 +38,7 @@ namespace MidTermLibrary
             book.CheckedIn = false;
             book.DueDate = DateTime.Now.AddDays(14);
          }
-<<<<<<< HEAD
+
 
         // check if the input even is a book method
 
@@ -55,7 +55,7 @@ namespace MidTermLibrary
 
         
 
-=======
+
          
         public static bool BookValidation(List<Book> books, string input)
         {
@@ -68,7 +68,6 @@ namespace MidTermLibrary
             }
             return false;
         }
->>>>>>> 92fbe14df1ce6754e059f1dc7dbedd47437f643c
 
 
     }
