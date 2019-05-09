@@ -55,9 +55,16 @@ namespace MidTermLibrary
             title = _title;
             author = _author;
             genre = _genre;
+            checkedin = true;
         }
 
-        
+        public Book(string _title, string _author, string _genre, bool _checkedIn)
+        {
+            title = _title;
+            author = _author;
+            genre = _genre;
+            checkedin = _checkedIn;
 
+        }
     }
 }
