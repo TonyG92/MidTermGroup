@@ -39,11 +39,6 @@ namespace MidTermLibrary
             book.DueDate = DateTime.Now.AddDays(14);
          }
 
-        // check if the input even is a book method
-
-
-
-        // a method for adding a book -tony
         
         public void BookAdd(List<Book> books, string inputTitle, string inputAuthor, string inputGenre)
         {
@@ -55,6 +50,7 @@ namespace MidTermLibrary
 
   
         // a method bookvalidation -andre
+
         public static bool BookValidation(List<Book> books, string input)
         {
             foreach (Book book in books)
@@ -66,6 +62,7 @@ namespace MidTermLibrary
             }
             return false;
         }
+
 
     }
 }
