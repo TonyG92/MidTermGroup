@@ -13,6 +13,11 @@ namespace MidTermLibrary
             string userInput;
             string response = "y";
             Console.WriteLine("Welcome to four codemen library!");
+            List<Book> books = SavedBooks.FindBooks();
+            foreach (Book book in books)
+            {
+                Console.WriteLine(book.Author + book.Title);
+            }
 
             while (response == "y")
             {
@@ -23,11 +28,11 @@ namespace MidTermLibrary
                 Console.Write("What category are you interested in? ");
 
                 userInput = Console.ReadLine();
-                foreach (Book m in List<Book>)
+                foreach (Book book in books)
                 {
-                    if (userInput.ToLower() == m.Title)
+                    if (userInput.ToLower() == book.Title)
                     {
-                        Console.WriteLine(m.Title);
+                        Console.WriteLine(book.Title);
                     }
 
                 }
@@ -36,11 +41,8 @@ namespace MidTermLibrary
 
                 response = Console.ReadLine();
 
-                List<Book> books = SavedBooks.FindBooks();
-                foreach (Book book in books)
-                {
-                    Console.WriteLine(book.Author + book.Title);
-                }
+
             }
         }
     }
+}
