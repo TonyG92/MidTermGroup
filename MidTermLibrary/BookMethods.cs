@@ -8,11 +8,11 @@ namespace MidTermLibrary
 {
     class BookMethods 
     {
-        //Data Members
+        //Data Members -andre
         
         private string titlekeyword;
 
-        //Properties
+        //Properties -andre
        
         public string TiteleKeyWord
         {
@@ -25,38 +25,36 @@ namespace MidTermLibrary
                 return titlekeyword;
             }
         }
-        //Constructor
+        //Constructor -amdre
 
         public BookMethods(string _titlekeyword) 
         {
             titlekeyword = _titlekeyword;
         }        
 
-        //methods
+        //methods bookdue -tony
         public void BookDue(Book book)
          {
             book.CheckedIn = false;
             book.DueDate = DateTime.Now.AddDays(14);
          }
-<<<<<<< HEAD
 
         // check if the input even is a book method
 
 
 
-        // a method for adding a book
-        public void BookAdd(List<Book> books, string userInput)
+        // a method for adding a book -tony
+        
+        public void BookAdd(List<Book> books, string inputTitle, string inputAuthor, string inputGenre)
         {
-            
+            Book book = new Book(inputTitle, inputAuthor, inputGenre);
+
+            books.Add(book);
+
         }
 
-
-
-
-        
-
-=======
-         
+  
+        // a method bookvalidation -andre
         public static bool BookValidation(List<Book> books, string input)
         {
             foreach (Book book in books)
@@ -68,8 +66,6 @@ namespace MidTermLibrary
             }
             return false;
         }
->>>>>>> 92fbe14df1ce6754e059f1dc7dbedd47437f643c
-
 
     }
 }
