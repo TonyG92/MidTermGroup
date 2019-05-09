@@ -13,13 +13,33 @@ namespace MidTermLibrary
             List<Book> books = SavedBooks.FindBooks();
             string userInput;
             string response = "y";
+            string choice = "";
             Console.WriteLine("Welcome to four codemen library!");
 
             while (response == "y")
             {
-                Console.WriteLine("Please select a category to sift through or type 6 to get a list of all our books.");
+                Console.WriteLine("Please select either Author, Title or Genre or type 6 to get a list of all our books.");
+                choice = Console.ReadLine();
+                switch (choice)
+                {
+                    case "Author":
+                        Console.Write("Please enter in an Author: ");
+                        BookMethods.DisplaySpecific(books, "Author", Console.ReadLine());
+                        break;
+                    case "Title":
+                        Console.Write("Please enter in an Title: ");
+                        BookMethods.DisplaySpecific(books, "Title", Console.ReadLine());
+                        break;
+                    case "Genre":
+                        Console.Write("Please enter in a Genre");
+                        BookMethods.DisplaySpecific(books, "Genre", Console.ReadLine());
+                        break;
+                    default:
+                        BookMethods.DisplaySpecific(books, "All", "");
+                        break;
 
-                Console.WriteLine(string.Format($"{0,15}{1,15}{2,15}{3,15}{4,15}{5,15}{6,15}", "Mystery", "Fantasy", "Thriller", "Fiction", "Detective"));
+                }
+                
 
                 Console.Write("What category are you interested in? ");
 
