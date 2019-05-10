@@ -35,7 +35,7 @@ namespace MidTermLibrary
                 string[] info = book.Split('/');
                 //makes new book ( go to Book)
                 //and follows pattern of title author genre
-                Book toAdd = new Book(info[0], info[1], info[2], bool.Parse(info[3]));
+                Book toAdd = new Book(info[0], info[1], info[2], bool.Parse(info[3].ToLower()), DateTime.Parse(info[4]));
                 //adds to new list
                 books.Add(toAdd);
             }
@@ -49,7 +49,7 @@ namespace MidTermLibrary
 
             foreach (Book book in books)
             {
-                string newBook = $"{book.Title}/{book.Author}/{book.Author}/{book.CheckedIn}";
+                string newBook = $"{book.Title}/{book.Author}/{book.Genre}/{book.CheckedIn.ToString().ToLower()}/{book.DueDate.ToString("MM-dd-yyyy")}";
                 lines.Add(newBook);
             }//gets all the lines to put in
 
