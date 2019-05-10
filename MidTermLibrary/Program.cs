@@ -21,6 +21,7 @@ namespace MidTermLibrary
 
             while (response == "y")
             {
+                Console.Clear();
                 Console.WriteLine("Please select either Author, Title , Genre or type All to get a list of all our books.");
                 choice = Console.ReadLine().ToLower();
 
@@ -44,14 +45,11 @@ namespace MidTermLibrary
                         Console.Write("Please enter in a Genre");
                         BookMethods.DisplaySpecific(books, "Genre", Console.ReadLine());
                         break;
-<<<<<<< HEAD
-
                     case "checkout":
                         BookMethods.ListBooks(books);
                         Console.WriteLine("What book do you want to check out");
                         BookMethods.BookDue(books.ElementAt(int.Parse(Console.ReadLine())+1));
                         break;
-
                     case "addbook":
                         Console.WriteLine("What book would you like to add to the library?");
                         Console.WriteLine("Enter Title");
@@ -60,37 +58,14 @@ namespace MidTermLibrary
                         string author = Console.ReadLine();
                         Console.WriteLine("Enter Genre");
                         string genre = Console.ReadLine();
-=======
-                    case "checkout":
-                        BookMethods.ListBooks(books);
-                        Console.WriteLine("What book would you like to checkout? ");
-
-                        BookMethods.BookDue(books.ElementAt(int.Parse(Console.ReadLine())+1));
                         break;
-                    case "addbook":
-                        Console.WriteLine("What book would you like to add to the library?");
-
-                        Console.WriteLine("Enter a title: ");
-                        string title = Console.ReadLine();
-
-                        Console.WriteLine("Enter an author: ");
-                        string author = Console.ReadLine();
-
-                        Console.WriteLine("Enter a genre: ");
-                        string genre = Console.ReadLine();
-
->>>>>>> 09242f96cc8be54ffb2f701aad9070f5c6e7f336
-                        BookMethods.BookAdd(books, title, author, genre);
-                        break;
-
                     default:
                         BookMethods.DisplaySpecific(books, "All", "");
                         break;
                 }
 
-                
-
                 Console.Write("What category are you interested in? ");
+
 
                 userInput = Console.ReadLine();
 
