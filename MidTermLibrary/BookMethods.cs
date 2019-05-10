@@ -37,8 +37,16 @@ namespace MidTermLibrary
 
         public static void BookDue(Book book)
          {
-            book.CheckedIn = false;
-            book.DueDate = DateTime.Now.AddDays(14);
+            if (book.CheckedIn)
+            {
+                book.CheckedIn = false;
+                book.DueDate = DateTime.Now.AddDays(14);
+            }
+            else
+            {
+                book.CheckedIn = true;
+                book.DueDate = DateTime.Now;
+            }
          }
  
         public static void BookAdd(List<Book> books, string inputTitle, string inputAuthor, string inputGenre)
@@ -70,13 +78,13 @@ namespace MidTermLibrary
             Console.WriteLine($"Book title: {book.Title}");
             Console.WriteLine($"Book author: {book.Author}");
             Console.WriteLine($"Book genre: {book.Genre}");
-            Console.WriteLine($"Status: {(book.CheckedIn ? "On shelves": "Out until "+book.DueDate)}");
+            Console.WriteLine($"Status: {(book.CheckedIn ? "On shelves": "Out until "+book.DueDate.ToString("MM/dd/yyyy"))}");
             Console.WriteLine("-------");
             
         }
 
         public static void ListBooks(List<Book> books)
-        {
+        {//Luke
             foreach (Book book in books)
             {
                 Console.WriteLine($"{books.IndexOf(book)+1}. {book.Title}");
@@ -91,7 +99,7 @@ namespace MidTermLibrary
             foreach (string word in wanted)
             {
                 
-                regexOfTarget = regexOfTarget+$"({word})|";
+                regexOfTarget = regexOfTarget+$@"\b({word})\b|";
             }
 
             return Regex.IsMatch(input.ToLower(), $@"\b(\w*({regexOfTarget}!)\w*)\b");
