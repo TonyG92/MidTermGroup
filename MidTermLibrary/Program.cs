@@ -22,11 +22,11 @@ namespace MidTermLibrary
             while (response == "y")
             {
                 Console.Clear();
-<<<<<<< HEAD
+
                 Console.WriteLine("Please select either Author, Title , Genre or type All to get a list of all our books.");
-=======
+
                 Console.WriteLine("Please select Author, Title or Genre.\nType All to get a list of all our books.");
->>>>>>> 5bda4fe91b71b9e733aa2a4673d667229766f7a9
+
                 choice = Console.ReadLine().ToLower();
 
 
