@@ -18,3 +18,29 @@ Harry Potter and the Order of the Phoenix/J.K. Rowling/Fantasy/true
 Harry Potter and the Half-Blood Prince/J.K. Rowling/Fantasy/true
 Harry Potter and the Deathly Hallows/J.K. Rowling/Fantasy/true
 The Alchemist/Paulo Coelho/Fantasy/true
+Ulysses/James Joyce/Modernism/true
+The Great Gatsby/F. Scott Fitzgerald/Historical Fiction/true
+Lolita/Vladimir Nabokov/Novel/true
+Brave New World/Aldous Huxley/Science Fiction/true
+The Sound and The Fury/William Faulkner/Southern Gothic/true
+Darkness at Noon/Arthur Koestler/Novel/true
+The Grapes of Wrath/John Steinbeck/Novel/true
+A Festival of Ghosts/William Alexander/Childrens/true
+A Night Divided/Jennifer A. Nielsen/Childrens/true
+Tunnel of Secrets/Franklin W. Dixon/Adventure/true
+Under the Egg/Laura Marx Fitzgerald/Childrens/true
+A Game of Thrones/George R.R. Martin/Epic Fantasy/true
+A Clash of Kings/George R.R. Martin/Epic Fantasy/true
+A Storm of Swords/George R.R. Martin/Epic Fantasy/true
+A Feast for Crows/George R.R. Martin/Epic Fantasy/true
+A Dance with Dragons/George R.R. Martin/Epic Fantasy/true
+The Winds of Winter/George R.R. Martin/Epic Fantasy/true
+A Dream of Spring/George R.R. Martin/Epic Fantasy/true
+
+
+
+
+
+
+
+
