@@ -11,23 +11,17 @@ namespace MidTermLibrary
         static void Main(string[] args)
         {
             List<Book> books = SavedBooks.FindBooks();
+<<<<<<< Updated upstream
             bool continuing = true;
+=======
+            string response = "y";
+>>>>>>> Stashed changes
             string choice = "";
-            Console.WriteLine("Welcome to four codemen library! Enter y to continue.");
-            response = Console.ReadLine();
-
-            
+            Console.WriteLine("Welcome to four codemen library!");
 
             do
             {
                 Console.Clear();
-<<<<<<< HEAD
-
-                Console.WriteLine("Please select either Author, Title , Genre or type All to get a list of all our books.");
-
-                Console.WriteLine("Please select Author, Title or Genre.\nType All to get a list of all our books.");
-
-=======
                 Console.WriteLine("1. Search by author" +
                     "\n2. Search by title keyword" +
                     "\n3. Search by genre" +
@@ -35,21 +29,20 @@ namespace MidTermLibrary
                     "\n5. Add a new book" +
 <<<<<<< HEAD
                     "\n6. Display all titles with index");
+<<<<<<< Updated upstream
 >>>>>>> 98531866daf4ee9dc84fb1af42b02fe7efff1ceb
 =======
                     "\n6. Display all titles with index" +
                     "\n7. Exit");
 >>>>>>> 9a3998e9543cdfb75fba685913e3979665c6cfad
+=======
+>>>>>>> Stashed changes
                 choice = Console.ReadLine().ToLower();
-
-
-                
-
                 switch (choice)
                 {
 
 
-                    // checking out and adding new books 
+                    // checking out and adding new books
                     case "1":
                         Console.Write("Please enter in an Author: ");
                         BookMethods.DisplaySpecific(books, "Author", Console.ReadLine());
@@ -64,6 +57,7 @@ namespace MidTermLibrary
                         break;
                     case "4":
                         BookMethods.ListBooks(books);
+<<<<<<< Updated upstream
 <<<<<<< HEAD
                         Console.WriteLine("What book do you want to check out");
                         BookMethods.BookDue(books.ElementAt(int.Parse(Console.ReadLine())+1));
@@ -72,28 +66,39 @@ namespace MidTermLibrary
 
                         BookMethods.BookDue(books.ElementAt(int.Parse(Console.ReadLine()) + 1));
 >>>>>>> 9a3998e9543cdfb75fba685913e3979665c6cfad
+=======
+                        Console.WriteLine("What book would you like to checkout? ");
+
+                        BookMethods.BookDue(books.ElementAt(int.Parse(Console.ReadLine()) + 1));
+>>>>>>> Stashed changes
                         break;
                     case "5":
                         Console.WriteLine("What book would you like to add to the library?");
-                        Console.WriteLine("Enter Title");
+
+                        Console.WriteLine("Enter a title: ");
                         string title = Console.ReadLine();
-                        Console.WriteLine("Enter Author");
+
+                        Console.WriteLine("Enter an author: ");
                         string author = Console.ReadLine();
-                        Console.WriteLine("Enter Genre");
+
+                        Console.WriteLine("Enter a genre: ");
                         string genre = Console.ReadLine();
+
+                        BookMethods.BookAdd(books, title, author, genre);
                         break;
-<<<<<<< HEAD
-=======
                     case "6":
                         BookMethods.ListBooks(books);
+<<<<<<< Updated upstream
                         break;
                     case "7":
                         continuing = false;
+=======
+>>>>>>> Stashed changes
                         break;
->>>>>>> 98531866daf4ee9dc84fb1af42b02fe7efff1ceb
                     default:
                         Console.WriteLine("Invalid choice!");
                         break;
+<<<<<<< Updated upstream
 <<<<<<< HEAD
                 }
 
@@ -103,33 +108,13 @@ namespace MidTermLibrary
                 userInput = Console.ReadLine();
 
                 foreach (Book book in books)
-
-                foreach (Book m in books)
-
-                {
-                    if (userInput.ToLower() == book.Title)
-                    {
-                        Console.WriteLine(book.Title);
-                    }
+=======
+>>>>>>> Stashed changes
 
                 }
 
                 Console.WriteLine("Would you like to continue? (y/n) ");
-
-
                 response = Console.ReadLine();
-
-
-                foreach (Book book in books)
-                {
-                    Console.WriteLine(book.Author + book.Title);
-                }
-
-
-
-                Console.WriteLine("Would you like to continue? (y/n) ");
-                response = Console.ReadLine();
-
             }
 =======
                 }
@@ -146,3 +131,6 @@ namespace MidTermLibrary
         }
     }
 }
+
+
+
