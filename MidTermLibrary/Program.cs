@@ -27,7 +27,7 @@ namespace MidTermLibrary
                         BookMethods.DisplaySpecific(books, "Author", Console.ReadLine());
                         break;
                     case "Title":
-                        Console.Write("Please enter in n Title: ");
+                        Console.Write("Please enter in a Title: ");
                         BookMethods.DisplaySpecific(books, "Title", Console.ReadLine());
                         break;
                     case "Genre":
@@ -39,29 +39,9 @@ namespace MidTermLibrary
                         break;
 
                 }
-                
-
-                Console.Write("What category are you interested in? ");
-
-                userInput = Console.ReadLine();
-                foreach (Book m in books)
-                {
-                    if (userInput.ToLower() == m.Title)
-                    {
-                        Console.WriteLine(m.Title);
-                    }
-
-                }
 
                 Console.WriteLine("Would you like to continue? (y/n) ");
-
                 response = Console.ReadLine();
-
-
-                foreach (Book book in books)
-                {
-                    Console.WriteLine(book.Author + book.Title);
-                }
             }
         }
     }
