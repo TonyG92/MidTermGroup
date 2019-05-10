@@ -65,12 +65,20 @@ namespace MidTermLibrary
         // - tony
         public static void Display(Book book)
         {
-           
-                Console.WriteLine($"Book title: {book.Title}");
-                Console.WriteLine($"Book author: {book.Author}");
-                Console.WriteLine($"Book genre: {book.Genre}");
-                Console.WriteLine("-------");
+            Console.WriteLine($"Book title: {book.Title}");
+            Console.WriteLine($"Book author: {book.Author}");
+            Console.WriteLine($"Book genre: {book.Genre}");
+            Console.WriteLine($"Status: {(book.CheckedIn ? "On shelves": "Out until "+book.DueDate)}");
+            Console.WriteLine("-------");
             
+        }
+
+        public static void ListBooks(List<Book> books)
+        {
+            foreach (Book book in books)
+            {
+                Console.WriteLine($"{books.IndexOf(book)+1}. {book.Title}");
+            }
         }
 
 
