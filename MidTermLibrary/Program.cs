@@ -11,11 +11,15 @@ namespace MidTermLibrary
         static void Main(string[] args)
         {
             List<Book> books = SavedBooks.FindBooks();
+<<<<<<< HEAD
             string response = "y";
+=======
+            bool continuing = true;
+>>>>>>> 9a3998e9543cdfb75fba685913e3979665c6cfad
             string choice = "";
             Console.WriteLine("Welcome to four codemen library!");
 
-            while (response == "y")
+            do
             {
                 Console.Clear();
                 Console.WriteLine("1. Search by author" +
@@ -23,7 +27,8 @@ namespace MidTermLibrary
                     "\n3. Search by genre" +
                     "\n4. Checkout a book" +
                     "\n5. Add a new book" +
-                    "\n6. Display all titles with index");
+                    "\n6. Display all titles with index" +
+                    "\n7. Exit");
                 choice = Console.ReadLine().ToLower();
                 switch (choice)
                 {
@@ -46,7 +51,7 @@ namespace MidTermLibrary
                         BookMethods.ListBooks(books);
                         Console.WriteLine("What book would you like to checkout? ");
 
-                        BookMethods.BookDue(books.ElementAt(int.Parse(Console.ReadLine())+1));
+                        BookMethods.BookDue(books.ElementAt(int.Parse(Console.ReadLine()) + 1));
                         break;
                     case "5":
                         Console.WriteLine("What book would you like to add to the library?");
@@ -64,16 +69,23 @@ namespace MidTermLibrary
                         break;
                     case "6":
                         BookMethods.ListBooks(books);
+<<<<<<< HEAD
+=======
+                        break;
+                    case "7":
+                        continuing = false;
+>>>>>>> 9a3998e9543cdfb75fba685913e3979665c6cfad
                         break;
                     default:
                         Console.WriteLine("Invalid choice!");
                         break;
-
                 }
-
-                Console.WriteLine("Would you like to continue? (y/n) ");
-                response = Console.ReadLine();
-            }
+                if (continuing)
+                {
+                    Console.WriteLine("Would you like to continue?(y/n)");
+                    continuing = Console.ReadLine() == "y" ? true : false;
+                }
+            } while (continuing);
 
             Console.WriteLine("Goodbye!");
             SavedBooks.SaveBooks(books);
