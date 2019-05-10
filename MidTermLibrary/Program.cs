@@ -27,7 +27,7 @@ namespace MidTermLibrary
                         BookMethods.DisplaySpecific(books, "Author", Console.ReadLine());
                         break;
                     case "Title":
-                        Console.Write("Please enter in an Title: ");
+                        Console.Write("Please enter in n Title: ");
                         BookMethods.DisplaySpecific(books, "Title", Console.ReadLine());
                         break;
                     case "Genre":
