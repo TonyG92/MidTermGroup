@@ -13,7 +13,7 @@ Vardi Wala Gunda/Ved Prakash Sharma/Ved Prakash Sharma/True
 The Da Vinci Code/Dan Brown/Dan Brown/True
 Harry Potter and the Chamber of Secrets/J.K. Rowling/J.K. Rowling/True
 Harry Potter and the Prisoner of Azkaban/J.K. Rowling/J.K. Rowling/True
-Harry Potter and the Goblet of Fire/J.K. Rowling/J.K. Rowling/True
+Harry Potter and the Goblet of Fire/J.K. Rowling/J.K. Rowling/False
 Harry Potter and the Order of the Phoenix/J.K. Rowling/J.K. Rowling/True
 Harry Potter and the Half-Blood Prince/J.K. Rowling/J.K. Rowling/True
 Harry Potter and the Deathly Hallows/J.K. Rowling/J.K. Rowling/True
