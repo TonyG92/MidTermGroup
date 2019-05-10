@@ -19,32 +19,37 @@ namespace MidTermLibrary
             while (response == "y")
             {
                 Console.Clear();
-                Console.WriteLine("Please select Author, Title or Genre.\nType All to get a list of all our books.");
+                Console.WriteLine("1. Search by author" +
+                    "\n2. Search by title keyword" +
+                    "\n3. Search by genre" +
+                    "\n4. Checkout a book" +
+                    "\n5. Add a new book" +
+                    "\n6. Display all titles with index");
                 choice = Console.ReadLine().ToLower();
                 switch (choice)
                 {
 
 
                     // checking out and adding new books 
-                    case "author":
+                    case "1":
                         Console.Write("Please enter in an Author: ");
                         BookMethods.DisplaySpecific(books, "Author", Console.ReadLine());
                         break;
-                    case "title":
+                    case "2":
                         Console.Write("Please enter in a Title: ");
                         BookMethods.DisplaySpecific(books, "Title", Console.ReadLine());
                         break;
-                    case "genre":
+                    case "3":
                         Console.Write("Please enter in a Genre: ");
                         BookMethods.DisplaySpecific(books, "Genre", Console.ReadLine());
                         break;
-                    case "checkout":
+                    case "4":
                         BookMethods.ListBooks(books);
                         Console.WriteLine("What book would you like to checkout? ");
 
                         BookMethods.BookDue(books.ElementAt(int.Parse(Console.ReadLine())+1));
                         break;
-                    case "addbook":
+                    case "5":
                         Console.WriteLine("What book would you like to add to the library?");
 
                         Console.WriteLine("Enter a title: ");
@@ -58,9 +63,11 @@ namespace MidTermLibrary
 
                         BookMethods.BookAdd(books, title, author, genre);
                         break;
-
+                    case "6":
+                        BookMethods.ListBooks();
+                        break;
                     default:
-                        BookMethods.DisplaySpecific(books, "All", "");
+                        Console.WriteLine("Invalid choice!");
                         break;
 
                 }
@@ -68,6 +75,9 @@ namespace MidTermLibrary
                 Console.WriteLine("Would you like to continue? (y/n) ");
                 response = Console.ReadLine();
             }
+
+            Console.WriteLine("Goodbye!");
+            SavedBooks.SaveBooks(books);
         }
     }
 }
