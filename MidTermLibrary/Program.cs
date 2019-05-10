@@ -26,18 +26,18 @@ namespace MidTermLibrary
             while (response == "y")
             {
                 Console.WriteLine("Please select either Author, Title , Genre or type All to get a list of all our books.");
-                choice = Console.ReadLine();
+                choice = Console.ReadLine().ToLower();
                 switch (choice)
                 {
-                    case "Author":
+                    case "author":
                         Console.Write("Please enter in an Author: ");
                         BookMethods.DisplaySpecific(books, "Author", Console.ReadLine());
                         break;
-                    case "Title":
-                        Console.Write("Please enter in an Title: ");
+                    case "title":
+                        Console.Write("Please enter in a Title: ");
                         BookMethods.DisplaySpecific(books, "Title", Console.ReadLine());
                         break;
-                    case "Genre":
+                    case "genre":
                         Console.Write("Please enter in a Genre");
                         BookMethods.DisplaySpecific(books, "Genre", Console.ReadLine());
                         break;
@@ -46,6 +46,7 @@ namespace MidTermLibrary
                         break;
 
                 }
+<<<<<<< HEAD
                 
 
                 Console.Write("What category are you interested in? ");
@@ -76,6 +77,11 @@ namespace MidTermLibrary
                     Console.WriteLine(book.Author + book.Title);
                 }
 >>>>>>> 91080d28e0dc1272fbc95786f510e3bfb7ed997d
+=======
+
+                Console.WriteLine("Would you like to continue? (y/n) ");
+                response = Console.ReadLine();
+>>>>>>> 58d93cc538f71e68ad31489b5074e1afa2ff7b6d
             }
         }
     }
