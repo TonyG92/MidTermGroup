@@ -86,7 +86,7 @@ namespace MidTermLibrary
         {//Luke
             foreach (Book book in books)
             {
-                Console.WriteLine($"{books.IndexOf(book)+1}. {book.Title}");
+                Console.WriteLine($"{books.IndexOf(book)+1}. {book.Title} - {(book.CheckedIn ? "On Shelf":"Checked Out")}");
             }
         }
 
