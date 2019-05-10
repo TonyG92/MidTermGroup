@@ -14,19 +14,19 @@ namespace MidTermLibrary
             string userInput;
             string response = "y";
             string choice = "";
-            Console.WriteLine("Welcome to four codemen library!");
+            Console.WriteLine("Welcome to four codemen library! Enter y to continue.");
             response = Console.ReadLine();
 
-            List<Book> books = SavedBooks.FindBooks();
-            foreach (Book book in books)
-            {
-                Console.WriteLine(book.Author + book.Title);
-            }
+            
 
             while (response == "y")
             {
                 Console.WriteLine("Please select either Author, Title , Genre or type All to get a list of all our books.");
                 choice = Console.ReadLine().ToLower();
+
+
+                
+
                 switch (choice)
                 {
                     case "author":
@@ -41,22 +41,39 @@ namespace MidTermLibrary
                         Console.Write("Please enter in a Genre");
                         BookMethods.DisplaySpecific(books, "Genre", Console.ReadLine());
                         break;
+
+                    case "checkout":
+                        BookMethods.ListBooks(books);
+                        Console.WriteLine("What book do you want to check out");
+                        BookMethods.BookDue(books.ElementAt(int.Parse(Console.ReadLine())+1));
+                        break;
+
+                    case "addbook":
+                        Console.WriteLine("What book would you like to add to the library?");
+                        Console.WriteLine("Enter Title");
+                        string title = Console.ReadLine();
+                        Console.WriteLine("Enter Author");
+                        string author = Console.ReadLine();
+                        Console.WriteLine("Enter Genre");
+                        string genre = Console.ReadLine();
+                        BookMethods.BookAdd(books, title, author, genre);
+                        break;
+
                     default:
                         BookMethods.DisplaySpecific(books, "All", "");
                         break;
-
                 }
-<<<<<<< HEAD
+
                 
 
                 Console.Write("What category are you interested in? ");
 
                 userInput = Console.ReadLine();
-<<<<<<< HEAD
+
                 foreach (Book book in books)
-=======
+
                 foreach (Book m in books)
->>>>>>> 91080d28e0dc1272fbc95786f510e3bfb7ed997d
+
                 {
                     if (userInput.ToLower() == book.Title)
                     {
@@ -67,8 +84,7 @@ namespace MidTermLibrary
 
                 Console.WriteLine("Would you like to continue? (y/n) ");
 
-<<<<<<< HEAD
-=======
+
                 response = Console.ReadLine();
 
 
@@ -76,12 +92,12 @@ namespace MidTermLibrary
                 {
                     Console.WriteLine(book.Author + book.Title);
                 }
->>>>>>> 91080d28e0dc1272fbc95786f510e3bfb7ed997d
-=======
+
+
 
                 Console.WriteLine("Would you like to continue? (y/n) ");
                 response = Console.ReadLine();
->>>>>>> 58d93cc538f71e68ad31489b5074e1afa2ff7b6d
+
             }
         }
     }

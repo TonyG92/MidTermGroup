@@ -33,25 +33,21 @@ namespace MidTermLibrary
             titlekeyword = _titlekeyword;
         }        
 
-<<<<<<< HEAD
-        
-=======
-        //methods bookdue -tony
->>>>>>> 91080d28e0dc1272fbc95786f510e3bfb7ed997d
-        public void BookDue(Book book)
+           //
+        public static void BookDue(Book book)
          {
             book.CheckedIn = false;
             book.DueDate = DateTime.Now.AddDays(14);
          }
  
-        public void BookAdd(List<Book> books, string inputTitle, string inputAuthor, string inputGenre)
+        public static void BookAdd(List<Book> books, string inputTitle, string inputAuthor, string inputGenre)
         {
             Book book = new Book(inputTitle, inputAuthor, inputGenre);
 
             books.Add(book);
 
         }
-
+        //
   
         // a method bookvalidation -andre
          
