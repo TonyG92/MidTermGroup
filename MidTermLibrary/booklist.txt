@@ -1,38 +1,38 @@
-Don Quixote/Miguel De Cervantes/Fantasy/true
-A Tale of Two Cities/Charles Dickens/Fantasy/true
-The Lord Of The Rings/J.R.R. Tolkien/Fantasy/true
-Le Petit Prince/Antoine de Saint-Exupery/Fiction/true
-Harry Potter and the Philosopher's Stone/J.K. Rowling/Fantasy/true
-The Hobbit/J.R.R. Tolkien/Fantasy/true
-And Then There Were None/Agatha Christie/Mystery/true
-Dream of the Red Chamber/Cao Xueqin/Fiction/true
-The Lion,the Witch and the Wardrobe/C.S. Lewis/Fantasy/true
-She: A History of Adventure/H. Rider Haggard/Fantasy , Adventure , Romance/true
-The Adventures of Pinocchio/Carlo Collodi/Fiction/true
-Vardi Wala Gunda/Ved Prakash Sharma/Detective/true
-The Da Vinci Code/Dan Brown/Mystery thriller/true
-Harry Potter and the Chamber of Secrets/J.K. Rowling/Fantasy/true
-Harry Potter and the Prisoner of Azkaban/J.K. Rowling/Fantasy/true
-Harry Potter and the Goblet of Fire/J.K. Rowling/Fantasy/true
-Harry Potter and the Order of the Phoenix/J.K. Rowling/Fantasy/true
-Harry Potter and the Half-Blood Prince/J.K. Rowling/Fantasy/true
-Harry Potter and the Deathly Hallows/J.K. Rowling/Fantasy/true
-The Alchemist/Paulo Coelho/Fantasy/true
-Ulysses/James Joyce/Modernism/true
-The Great Gatsby/F. Scott Fitzgerald/Historical Fiction/true
-Lolita/Vladimir Nabokov/Novel/true
-Brave New World/Aldous Huxley/Science Fiction/true
-The Sound and The Fury/William Faulkner/Southern Gothic/true
-Darkness at Noon/Arthur Koestler/Novel/true
-The Grapes of Wrath/John Steinbeck/Novel/true
-A Festival of Ghosts/William Alexander/Childrens/true
-A Night Divided/Jennifer A. Nielsen/Childrens/true
-Tunnel of Secrets/Franklin W. Dixon/Adventure/true
-Under the Egg/Laura Marx Fitzgerald/Childrens/true
-A Game of Thrones/George R.R. Martin/Epic Fantasy/true
-A Clash of Kings/George R.R. Martin/Epic Fantasy/true
-A Storm of Swords/George R.R. Martin/Epic Fantasy/true
-A Feast for Crows/George R.R. Martin/Epic Fantasy/true
-A Dance with Dragons/George R.R. Martin/Epic Fantasy/true
-The Winds of Winter/George R.R. Martin/Epic Fantasy/true
-A Dream of Spring/George R.R. Martin/Epic Fantasy/true
+Don Quixote/Miguel De Cervantes/Miguel De Cervantes/True
+A Tale of Two Cities/Charles Dickens/Charles Dickens/True
+The Lord Of The Rings/J.R.R. Tolkien/J.R.R. Tolkien/True
+Le Petit Prince/Antoine de Saint-Exupery/Antoine de Saint-Exupery/True
+Harry Potter and the Philosopher's Stone/J.K. Rowling/J.K. Rowling/True
+The Hobbit/J.R.R. Tolkien/J.R.R. Tolkien/True
+And Then There Were None/Agatha Christie/Agatha Christie/True
+Dream of the Red Chamber/Cao Xueqin/Cao Xueqin/True
+The Lion,the Witch and the Wardrobe/C.S. Lewis/C.S. Lewis/True
+She: A History of Adventure/H. Rider Haggard/H. Rider Haggard/True
+The Adventures of Pinocchio/Carlo Collodi/Carlo Collodi/True
+Vardi Wala Gunda/Ved Prakash Sharma/Ved Prakash Sharma/True
+The Da Vinci Code/Dan Brown/Dan Brown/True
+Harry Potter and the Chamber of Secrets/J.K. Rowling/J.K. Rowling/True
+Harry Potter and the Prisoner of Azkaban/J.K. Rowling/J.K. Rowling/True
+Harry Potter and the Goblet of Fire/J.K. Rowling/J.K. Rowling/True
+Harry Potter and the Order of the Phoenix/J.K. Rowling/J.K. Rowling/True
+Harry Potter and the Half-Blood Prince/J.K. Rowling/J.K. Rowling/True
+Harry Potter and the Deathly Hallows/J.K. Rowling/J.K. Rowling/True
+The Alchemist/Paulo Coelho/Paulo Coelho/True
+Ulysses/James Joyce/James Joyce/True
+The Great Gatsby/F. Scott Fitzgerald/F. Scott Fitzgerald/True
+Lolita/Vladimir Nabokov/Vladimir Nabokov/True
+Brave New World/Aldous Huxley/Aldous Huxley/True
+The Sound and The Fury/William Faulkner/William Faulkner/True
+Darkness at Noon/Arthur Koestler/Arthur Koestler/True
+The Grapes of Wrath/John Steinbeck/John Steinbeck/True
+A Festival of Ghosts/William Alexander/William Alexander/True
+A Night Divided/Jennifer A. Nielsen/Jennifer A. Nielsen/True
+Tunnel of Secrets/Franklin W. Dixon/Franklin W. Dixon/True
+Under the Egg/Laura Marx Fitzgerald/Laura Marx Fitzgerald/True
+A Game of Thrones/George R.R. Martin/George R.R. Martin/True
+A Clash of Kings/George R.R. Martin/George R.R. Martin/True
+A Storm of Swords/George R.R. Martin/George R.R. Martin/True
+A Feast for Crows/George R.R. Martin/George R.R. Martin/True
+A Dance with Dragons/George R.R. Martin/George R.R. Martin/True
+The Winds of Winter/George R.R. Martin/George R.R. Martin/True
+A Dream of Spring/George R.R. Martin/George R.R. Martin/True

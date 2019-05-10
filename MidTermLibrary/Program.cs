@@ -11,7 +11,6 @@ namespace MidTermLibrary
         static void Main(string[] args)
         {
             List<Book> books = SavedBooks.FindBooks();
-            string userInput;
             string response = "y";
             string choice = "";
             Console.WriteLine("Welcome to four codemen library!");
@@ -64,7 +63,7 @@ namespace MidTermLibrary
                         BookMethods.BookAdd(books, title, author, genre);
                         break;
                     case "6":
-                        BookMethods.ListBooks();
+                        BookMethods.ListBooks(books);
                         break;
                     default:
                         Console.WriteLine("Invalid choice!");
