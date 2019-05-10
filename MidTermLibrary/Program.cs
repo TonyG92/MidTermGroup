@@ -11,11 +11,11 @@ namespace MidTermLibrary
         static void Main(string[] args)
         {
             List<Book> books = SavedBooks.FindBooks();
-<<<<<<< Updated upstream
-            bool continuing = true;
-=======
+
             string response = "y";
->>>>>>> Stashed changes
+
+            bool continuing = true;
+
             string choice = "";
             Console.WriteLine("Welcome to four codemen library!");
 
@@ -27,16 +27,8 @@ namespace MidTermLibrary
                     "\n3. Search by genre" +
                     "\n4. Checkout a book" +
                     "\n5. Add a new book" +
-<<<<<<< HEAD
-                    "\n6. Display all titles with index");
-<<<<<<< Updated upstream
->>>>>>> 98531866daf4ee9dc84fb1af42b02fe7efff1ceb
-=======
                     "\n6. Display all titles with index" +
                     "\n7. Exit");
->>>>>>> 9a3998e9543cdfb75fba685913e3979665c6cfad
-=======
->>>>>>> Stashed changes
                 choice = Console.ReadLine().ToLower();
                 switch (choice)
                 {
@@ -57,20 +49,9 @@ namespace MidTermLibrary
                         break;
                     case "4":
                         BookMethods.ListBooks(books);
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-                        Console.WriteLine("What book do you want to check out");
-                        BookMethods.BookDue(books.ElementAt(int.Parse(Console.ReadLine())+1));
-=======
                         Console.WriteLine("What book would you like to checkout? ");
 
                         BookMethods.BookDue(books.ElementAt(int.Parse(Console.ReadLine()) + 1));
->>>>>>> 9a3998e9543cdfb75fba685913e3979665c6cfad
-=======
-                        Console.WriteLine("What book would you like to checkout? ");
-
-                        BookMethods.BookDue(books.ElementAt(int.Parse(Console.ReadLine()) + 1));
->>>>>>> Stashed changes
                         break;
                     case "5":
                         Console.WriteLine("What book would you like to add to the library?");
@@ -88,35 +69,15 @@ namespace MidTermLibrary
                         break;
                     case "6":
                         BookMethods.ListBooks(books);
-<<<<<<< Updated upstream
+
                         break;
                     case "7":
                         continuing = false;
-=======
->>>>>>> Stashed changes
+
                         break;
                     default:
                         Console.WriteLine("Invalid choice!");
                         break;
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-                }
-
-                Console.Write("What category are you interested in? ");
-
-
-                userInput = Console.ReadLine();
-
-                foreach (Book book in books)
-=======
->>>>>>> Stashed changes
-
-                }
-
-                Console.WriteLine("Would you like to continue? (y/n) ");
-                response = Console.ReadLine();
-            }
-=======
                 }
                 if (continuing)
                 {
@@ -124,13 +85,9 @@ namespace MidTermLibrary
                     continuing = Console.ReadLine() == "y" ? true : false;
                 }
             } while (continuing);
->>>>>>> 9a3998e9543cdfb75fba685913e3979665c6cfad
 
             Console.WriteLine("Goodbye!");
             SavedBooks.SaveBooks(books);
         }
     }
 }
-
-
-
