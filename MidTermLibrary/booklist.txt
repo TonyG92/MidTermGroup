@@ -1,38 +1,38 @@
-Don Quixote/Miguel De Cervantes/Miguel De Cervantes/True
-A Tale of Two Cities/Charles Dickens/Charles Dickens/True
-The Lord Of The Rings/J.R.R. Tolkien/J.R.R. Tolkien/True
-Le Petit Prince/Antoine de Saint-Exupery/Antoine de Saint-Exupery/True
-Harry Potter and the Philosopher's Stone/J.K. Rowling/J.K. Rowling/True
-The Hobbit/J.R.R. Tolkien/J.R.R. Tolkien/True
-And Then There Were None/Agatha Christie/Agatha Christie/True
-Dream of the Red Chamber/Cao Xueqin/Cao Xueqin/True
-The Lion,the Witch and the Wardrobe/C.S. Lewis/C.S. Lewis/True
-She: A History of Adventure/H. Rider Haggard/H. Rider Haggard/True
-The Adventures of Pinocchio/Carlo Collodi/Carlo Collodi/True
-Vardi Wala Gunda/Ved Prakash Sharma/Ved Prakash Sharma/True
-The Da Vinci Code/Dan Brown/Dan Brown/True
-Harry Potter and the Chamber of Secrets/J.K. Rowling/J.K. Rowling/True
-Harry Potter and the Prisoner of Azkaban/J.K. Rowling/J.K. Rowling/True
-Harry Potter and the Goblet of Fire/J.K. Rowling/J.K. Rowling/True
-Harry Potter and the Order of the Phoenix/J.K. Rowling/J.K. Rowling/True
-Harry Potter and the Half-Blood Prince/J.K. Rowling/J.K. Rowling/True
-Harry Potter and the Deathly Hallows/J.K. Rowling/J.K. Rowling/True
-The Alchemist/Paulo Coelho/Paulo Coelho/True
-Ulysses/James Joyce/James Joyce/True
-The Great Gatsby/F. Scott Fitzgerald/F. Scott Fitzgerald/True
-Lolita/Vladimir Nabokov/Vladimir Nabokov/True
-Brave New World/Aldous Huxley/Aldous Huxley/True
-The Sound and The Fury/William Faulkner/William Faulkner/True
-Darkness at Noon/Arthur Koestler/Arthur Koestler/True
-The Grapes of Wrath/John Steinbeck/John Steinbeck/True
-A Festival of Ghosts/William Alexander/William Alexander/True
-A Night Divided/Jennifer A. Nielsen/Jennifer A. Nielsen/True
-Tunnel of Secrets/Franklin W. Dixon/Franklin W. Dixon/True
-Under the Egg/Laura Marx Fitzgerald/Laura Marx Fitzgerald/True
-A Game of Thrones/George R.R. Martin/George R.R. Martin/True
-A Clash of Kings/George R.R. Martin/George R.R. Martin/True
-A Storm of Swords/George R.R. Martin/George R.R. Martin/True
-A Feast for Crows/George R.R. Martin/George R.R. Martin/True
-A Dance with Dragons/George R.R. Martin/George R.R. Martin/True
-The Winds of Winter/George R.R. Martin/George R.R. Martin/True
-A Dream of Spring/George R.R. Martin/George R.R. Martin/True
+Don Quixote/Miguel De Cervantes/Fantasy/true/12-01-2019
+A Tale of Two Cities/Charles Dickens/Fantasy/true/12-01-2019
+The Lord Of The Rings/J.R.R. Tolkien/Fantasy/true/12-01-2019
+Le Petit Prince/Antoine de Saint-Exupery/Fiction/true/12-01-2019
+Harry Potter and the Philosopher's Stone/J.K. Rowling/Fantasy/true/12-01-2019
+The Hobbit/J.R.R. Tolkien/Fantasy/true/12-01-2019
+And Then There Were None/Agatha Christie/Mystery/true/12-01-2019
+Dream of the Red Chamber/Cao Xueqin/Fiction/true/12-01-2019
+The Lion,the Witch and the Wardrobe/C.S. Lewis/Fantasy/true/12-01-2019
+She: A History of Adventure/H. Rider Haggard/Fantasy , Adventure , Romance/true/12-01-2019
+The Adventures of Pinocchio/Carlo Collodi/Fiction/true/12-01-2019
+Vardi Wala Gunda/Ved Prakash Sharma/Detective/true/12-01-2019
+The Da Vinci Code/Dan Brown/Mystery thriller/true/12-01-2019
+Harry Potter and the Chamber of Secrets/J.K. Rowling/Fantasy/true/12-01-2019
+Harry Potter and the Prisoner of Azkaban/J.K. Rowling/Fantasy/true/12-01-2019
+Harry Potter and the Goblet of Fire/J.K. Rowling/Fantasy/true/12-01-2019
+Harry Potter and the Order of the Phoenix/J.K. Rowling/Fantasy/true/12-01-2019
+Harry Potter and the Half-Blood Prince/J.K. Rowling/Fantasy/true/12-01-2019
+Harry Potter and the Deathly Hallows/J.K. Rowling/Fantasy/true/12-01-2019
+The Alchemist/Paulo Coelho/Fantasy/true/12-01-2019
+Ulysses/James Joyce/Modernism/true/12-01-2019
+The Great Gatsby/F. Scott Fitzgerald/Historical Fiction/true/12-01-2019
+Lolita/Vladimir Nabokov/Novel/true/05-10-2019
+Brave New World/Aldous Huxley/Science Fiction/true/12-01-2019
+The Sound and The Fury/William Faulkner/Southern Gothic/true/12-01-2019
+Darkness at Noon/Arthur Koestler/Novel/true/12-01-2019
+The Grapes of Wrath/John Steinbeck/Novel/true/12-01-2019
+A Festival of Ghosts/William Alexander/Childrens/true/12-01-2019
+A Night Divided/Jennifer A. Nielsen/Childrens/true/12-01-2019
+Tunnel of Secrets/Franklin W. Dixon/Adventure/true/12-01-2019
+Under the Egg/Laura Marx Fitzgerald/Childrens/true/12-01-2019
+A Game of Thrones/George R.R. Martin/Epic Fantasy/true/12-01-2019
+A Clash of Kings/George R.R. Martin/Epic Fantasy/true/12-01-2019
+A Storm of Swords/George R.R. Martin/Epic Fantasy/true/05-10-2019
+A Feast for Crows/George R.R. Martin/Epic Fantasy/true/12-01-2019
+A Dance with Dragons/George R.R. Martin/Epic Fantasy/true/12-01-2019
+The Winds of Winter/George R.R. Martin/Epic Fantasy/true/12-01-2019
+A Dream of Spring/George R.R. Martin/Epic Fantasy/true/12-01-2019

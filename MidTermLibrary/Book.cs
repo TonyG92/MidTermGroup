@@ -64,7 +64,16 @@ namespace MidTermLibrary
             author = _author;
             genre = _genre;
             checkedin = _checkedIn;
+            duedate = DateTime.Now;
+        }
 
+        public Book(string _title, string _author, string _genre, bool _checkedIn, DateTime _dueDate)
+        {
+            title = _title;
+            author = _author;
+            genre = _genre;
+            checkedin = _checkedIn;
+            duedate = _dueDate;
         }
     }
 }
