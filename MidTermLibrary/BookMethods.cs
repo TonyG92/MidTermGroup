@@ -34,7 +34,11 @@ namespace MidTermLibrary
             titlekeyword = _titlekeyword;
         }        
 
+<<<<<<< HEAD
            //
+=======
+        //methods bookdue -tony
+>>>>>>> 09242f96cc8be54ffb2f701aad9070f5c6e7f336
         public static void BookDue(Book book)
          {
             book.CheckedIn = false;
