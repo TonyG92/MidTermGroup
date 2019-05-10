@@ -34,13 +34,13 @@ namespace MidTermLibrary
         }        
 
         //methods bookdue -tony
-        public void BookDue(Book book)
+        public static void BookDue(Book book)
          {
             book.CheckedIn = false;
             book.DueDate = DateTime.Now.AddDays(14);
          }
  
-        public void BookAdd(List<Book> books, string inputTitle, string inputAuthor, string inputGenre)
+        public static void BookAdd(List<Book> books, string inputTitle, string inputAuthor, string inputGenre)
         {
             Book book = new Book(inputTitle, inputAuthor, inputGenre);
 
