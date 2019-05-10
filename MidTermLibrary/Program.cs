@@ -18,7 +18,8 @@ namespace MidTermLibrary
 
             while (response == "y")
             {
-                Console.WriteLine("Please select either Author, Title , Genre or type All to get a list of all our books.");
+                Console.Clear();
+                Console.WriteLine("Please select Author, Title or Genre.\nType All to get a list of all our books.");
                 choice = Console.ReadLine().ToLower();
                 switch (choice)
                 {
@@ -34,7 +35,7 @@ namespace MidTermLibrary
                         BookMethods.DisplaySpecific(books, "Title", Console.ReadLine());
                         break;
                     case "genre":
-                        Console.Write("Please enter in a Genre");
+                        Console.Write("Please enter in a Genre: ");
                         BookMethods.DisplaySpecific(books, "Genre", Console.ReadLine());
                         break;
                     case "checkout":
