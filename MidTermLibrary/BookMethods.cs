@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace MidTermLibrary
@@ -81,6 +82,19 @@ namespace MidTermLibrary
             }
         }
 
+        public static bool IsMatch(string input, string target)
+        {
+            string[] wanted = target.ToLower().Split(' ');
+            string regexOfTarget = "";
+
+            foreach (string word in wanted)
+            {
+                
+                regexOfTarget = regexOfTarget+$"({word})|";
+            }
+
+            return Regex.IsMatch(input.ToLower(), $@"\b(\w*({regexOfTarget}!)\w*)\b");
+        }
 
         // -tony
         public static void DisplaySpecific(List<Book> books, string search, string input)
@@ -89,7 +103,7 @@ namespace MidTermLibrary
             {
                 case "Title": foreach(Book book in books)
                     {
-                        if(input == book.Title)
+                        if(IsMatch(input, book.Title))
                         {
                             Display(book);
                         }
@@ -98,7 +112,7 @@ namespace MidTermLibrary
                 case "Author":
                     foreach (Book book in books)
                     {
-                        if (input == book.Author)
+                        if (IsMatch(input, book.Author))
                         {
                             Display(book);
                         }
@@ -107,7 +121,7 @@ namespace MidTermLibrary
                 case "Genre":
                     foreach (Book book in books)
                     {
-                        if (input == book.Genre)
+                        if (IsMatch(input, book.Genre))
                         {
                             Display(book);
                         }
@@ -121,11 +135,6 @@ namespace MidTermLibrary
             }
         }
 
-
         
-
-
-
-
     }
 }
