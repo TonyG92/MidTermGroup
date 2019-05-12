@@ -21,7 +21,7 @@ namespace MidTermLibrary
                 Console.WriteLine("1. Search by author" +
                     "\n2. Search by title keyword" +
                     "\n3. Search by genre" +
-                    "\n4. Checkout a book" +
+                    "\n4. Checkout a book, or turn one in" +
                     "\n5. Add a new book" +
                     "\n6. Display all titles with index" +
                     "\n7. Display all books and information" +
@@ -47,7 +47,7 @@ namespace MidTermLibrary
 
                     case "4":
                         BookMethods.ListBooks(books);
-                        Console.WriteLine("What book would you like to checkout? ");
+                        Console.WriteLine("What book would you like to checkout/turn in?? ");
 
                         BookMethods.BookDue(books.ElementAt(int.Parse(Console.ReadLine())-1));
                         break;
@@ -78,12 +78,6 @@ namespace MidTermLibrary
                     default:
                         Console.WriteLine("Invalid choice!");
                         break;
-                }
-
-                if (continuing)
-                {
-                    Console.WriteLine("Press any key to continue...");
-                    Console.ReadKey();
                 }
 
             } while (continuing);
