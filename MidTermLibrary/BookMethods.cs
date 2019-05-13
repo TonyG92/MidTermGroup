@@ -86,8 +86,6 @@ namespace MidTermLibrary
             {
                 Console.WriteLine($"{books.IndexOf(book) + 1}. {book.Title} - {(book.CheckedIn ? "On Shelf" : "Checked Out")}");
             }
-            Console.Write("Press any key to continue...");
-            Console.ReadKey();
         }
         // validates user input based on key words
         public static bool IsMatch(string input, string target)
