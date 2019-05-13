@@ -11,16 +11,36 @@ namespace MidTermLibrary
         public static string GetBookFile()
         {
             string test;
-            try
+            try//try catch because im lazy and it will only ever be in 1 of these 2 places, throwing exception if the former
             {
-                test = System.IO.File.ReadAllText($@"{System.IO.Directory.GetCurrentDirectory()}\booklist.txt");
+                test = System.IO.File.ReadAllText($@"{System.IO.Directory.GetCurrentDirectory()}\booklist.txt");//this will throw an exception if it doesnt work
                 return $@"{System.IO.Directory.GetCurrentDirectory()}\booklist.txt";
             }//i barely know why this works but it does -Luke
-            catch (Exception e)
+            catch (Exception)
             {
                 return $@"..\..\booklist.txt";
             }
         }
+
+        public static string GetSynopsisFile()
+        {//synopsis is long, so this'll work well enough
+            string test;
+            try
+            {
+                test = System.IO.File.ReadAllText($@"{System.IO.Directory.GetCurrentDirectory()}\Synopsis.txt");
+                return $@"{System.IO.Directory.GetCurrentDirectory()}\Synopsis.txt";
+            }//i barely know why this works but it does -Luke
+            catch (Exception)
+            {
+                return $@"..\..\Synopsis.txt";
+            }
+        }
+
+        public static string[] GetSynopsi()//synopsisses? 
+        {
+            return System.IO.File.ReadAllLines(GetSynopsisFile());
+        }
+
         public static List<Book> FindBooks()
         {
             // making new book variable
