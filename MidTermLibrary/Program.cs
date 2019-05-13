@@ -66,8 +66,16 @@ namespace MidTermLibrary
                     case "4":
                         BookMethods.ListBooks(books);
                         Console.WriteLine("What book would you like to checkout/turn in?? ");
-
-                        BookMethods.BookDue(books.ElementAt(int.Parse(Console.ReadLine()) - 1));
+                        try
+                        {
+                            BookMethods.BookDue(books.ElementAt(int.Parse(Console.ReadLine()) - 1));
+                        }
+                        catch
+                        {
+                            Console.WriteLine("Your entry was not a valid index." +
+                                "\nPress any key to continue...");
+                            Console.ReadKey();
+                        }
                         break;
 
                     case "5":
@@ -83,7 +91,12 @@ namespace MidTermLibrary
 
                     case "6":
                         BookMethods.ListBooks(books);
+<<<<<<< HEAD
 
+=======
+                        Console.WriteLine("Press any key to continue...");
+                        Console.ReadKey();
+>>>>>>> f23bdc24805c50c32532941ad8b47bf7cb69a335
                         break;
 
                     case "7":
