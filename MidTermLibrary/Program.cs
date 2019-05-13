@@ -33,13 +33,8 @@ namespace MidTermLibrary
                 choice = Console.ReadLine().ToLower();
                 switch (choice)
                 {
-<<<<<<< HEAD
 
 
-                    // checking out and adding new books
-=======
-                    // checking out and adding new books 
->>>>>>> a9bb813d1e88d18d3daa9b545dddbfae33f2d853
                     case "1":
                         Console.Write("Please enter in an Author: ");
                         BookMethods.DisplaySpecific(books, "Author", Console.ReadLine());
