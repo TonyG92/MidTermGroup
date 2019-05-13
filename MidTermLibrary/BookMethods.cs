@@ -159,7 +159,16 @@ namespace MidTermLibrary
             Console.WriteLine("If you would like to view a books synopsis, enter its index." +
                 "\nOtherwise, press enter to return to the main menu.");
             int index;
-            string response = Console.ReadLine();  // return to synopsis or go to main menu;
+            string response;// return to synopsis or go to main menu
+            try
+            {
+                response = Console.ReadLine();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                response = "Error";
+            }
             if (int.TryParse(response, out index))
             {
                 Console.WriteLine(GetSynopsis(index - 1));
