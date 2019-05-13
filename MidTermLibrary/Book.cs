@@ -9,7 +9,7 @@ namespace MidTermLibrary
     class Book
     {
 
-        //Data Members
+        //Data Membeers (Fields)
         private string title;
         private string author;
         private string genre;
@@ -48,8 +48,10 @@ namespace MidTermLibrary
         }
 
         //Constructor 
+        //There are multiple constructors here to save time instead of making it more complicated later on.
+        //These are used for 3 different instances
 
-            //from Program to here ; splits it into titile author and genre
+        //Firstly, used for newly added books - in book methods
         public Book(string _title, string _author, string _genre)
         {
             title = _title;
@@ -58,6 +60,8 @@ namespace MidTermLibrary
             checkedin = true;
         }
 
+
+        //Secondly, Added the duedate to persist with the data. Added this to make it work for saved books. -in saved books class
         public Book(string _title, string _author, string _genre, bool _checkedIn)
         {
             title = _title;
@@ -67,6 +71,7 @@ namespace MidTermLibrary
             duedate = DateTime.Now;
         }
 
+        //Thirdly, This is for saving the info after you check out the books. in saved books class
         public Book(string _title, string _author, string _genre, bool _checkedIn, DateTime _dueDate)
         {
             title = _title;
